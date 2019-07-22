@@ -37,19 +37,27 @@
 
 			
 			// standard fill to empty divs:
-			var divs = $("div")
-			divs.each(function () {         
+			$("div").each(function () {         
 				$(this).append(":::::.......");
 			});
 			
 			/*
 			
+                            2do: static Melde-Fenster, das sich ein- und ausblendet
+                            
                             2do: per Mausklick FOCUS setzen
                             2do: Verhindern, dass 'hoch'/'runter' nicht auch den Bildschirm scrollt
-                            2do: Den Bildschirm bewusst scrollen, wenn das aktuelle Element (FOCUS) aus dem Bild läuft.
+                            2do: Den Fensterinhalt bewusst scrollen, wenn das aktuelle Element (FOCUS) aus dem Bild läuft.
                             
-                            2do: intelligente Funktion, wenn Formular-Eingabe-Felder "aktiv" sind.
+                            2do:(?) links-rechts deaktivieren, wenn Formular-Eingabe-Felder "aktiv" sind.
+                            
+                            2do: doppelte 'hoch'/'runter' am Anfang/Ende registrieren und "ausbrechen" über ein Eltern-Element ermöglichen
+                            
+                            2do: links-rechts: das zuletzt fokussierte Kind-Element merken, sodass die Folge 'links'+'rechts' einen zum Elternelement bewegt und dann wieder zurück zu demselben Kind-Element (und nicht zum ersten Kind)
 			
+                            2do: Bildauf, Bildab, Pos1, Ende …
+                            
+                            2do: 'Strg' + '_'  ?? und sonstige Kombinationen
 			
 			
 			*/
