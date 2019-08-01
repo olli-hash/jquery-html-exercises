@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>v12</title>
+
+
+	<style>
+		div, p {          /*  Textfarbe, Außenabstand, Schatten  */
+		
+                    color: #333333; margin: 8px;  box-shadow: 3px 3px 3px 1px #222;
+		  
+		}
+		
+		
+		input {  margin:10px;     }    /*  Außenabstand */
+		
+		
+		body {   /*   Innenabstand, Border, Background        */
+		
+                    padding:70px;  border: 1px solid #ccc;    
+                    background: linear-gradient(135deg, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+
+		}
+		
+		.display_number_and_stats {   float:right;  border-radius: 20px;   border: 3px solid #333;    padding: 10px;   
+                                    background-color: #fff;     }
+		
+		body > a {   display:block; margin:1px;                }
+		
+		
+		#message_window textarea {   width: 300px; height: 300px;             }
+		
+		#message_window .X {  float: right;      }
+		
+		#message_window {  position: fixed; top: 50px; right: 50px; width: 40%; border: 3px solid #333; padding: 20px;
+                    background-color: #fff; 
+                    border-radius: 20px;
+                    
+                    overflow: auto;
+		}
+
+		
+		#aaa div {   border: 1px solid #333;                     }
+
+		
+		#bbb, #bbb div {   border: 1px solid #333;   padding: 2px;                  }
+		
+		
+		#bbb div div.std_tools {   box-shadow:none; border-color: #999;               }
+		
+		
+		#bbb div div.std_tools .std_tools_1  {    padding:3px; border: 1px solid #aaa;             }
+		
+		
+		div#aaa {   padding:10px;      border: 1px solid #ccc;   
+		
+               background: linear-gradient(135deg, #ebe9f9 0%,#d8d0ef 50%,#cec7ec 51%,#c1bfea 100%);            }
+
+		.red2yellow  { 
+		
+		background: linear-gradient(135deg, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+		
+		height:100px ;  }
+
+
+		
+                #aaa div.has_focus, div#aaa.has_focus, .has_focus {   		
+		border: 3px dashed red;
+		
+		 box-shadow: 5px 5px 3px 1px #000;
+		 }
+
+		
+	</style>
+
+	<script type = "text/javascript" 
+	 src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script>
+
+	<script>
+
+		$( document ).ready(function() {
+
+		
+                    $("div").append('&nbsp;')
+                    
+                    
+                    var o = $('<div id="message_window"></div>')
+                    
+                    $('body').append(o)
+                    
+                    
+                    o.html('Hello… this is a test.')
+                    
+                    o.delay(1000).fadeOut(4000)
+                    
+                    
+                    
+                    
+                    $('#bbb div').prepend("<div class='std_tools'><b>functions coming…</b></div>")
+                    
+                    
+                    $('.std_tools').before("<div class='std_tools_1'>1,2,3,4</div>")
+                    
+                    // Event-Handler !!
+                    
+                    $('.std_tools_1').before("<div class='std_tools_2'>1,2</div>")
+                
+                
+                    $('.std_tools_2').each(function(index){
+                    
+                        var offset_msg = "Offset: top=" + $(this).parent().offset().top + " left="  +  $(this).offset().left
+                        
+                        var index_msg = "Index: " + index
+                        
+                        $(this).before("<div class='display_number_and_stats'>" + offset_msg + " " + index_msg  + "</div>")
+                    })
+                    
+                    
+                    $(document).scrollTop(1025)
+                
+                
+                
+                    
+                    $('#bbb > div').on("click", function(e){
+                    
+                    
+                        if ($('#message_window').length > 0) {
+                            $('#message_window').remove()
+                        }
+                        
+                        var o = $('<div id="message_window"><div class="X">X</div></div>')
+                    
+                        $('body').append(o)
+                        
+                        var q = "<textarea>"  +  $(e.target).html() +  "</textarea>" 
+                        
+                        o.append(q)
+                        
+//                         o.delay(1000).fadeOut(4000)
+                            
+                        $('#message_window > .X').on("click", function (e) {
+                            $(e.target).parent().remove()
+                        })
+                        
+                    
+                    
+                    })
+                    
+                    
+                    
+                    
+                
+                
+                
+
+		});
+
+	</script>
+</head>
+<body>
+
+
+
+<!--    $('#aaa')       $('#aaa div')           -->
+
+
+<div id="aaa">
+
+    <div id="output_1"></div>
+
+    <div></div>
+
+    <div class="red2yellow"></div>
+
+    <div></div>
+
+    <div></div>
+
+</div>
+
+<br><br><br><br>
+
+<div id="bbb">
+
+    <div>Ich bin Geist und mein Wirken ist Geist.</div>
+
+    <div>Ich will gesund werden und ich will Gott dienen.</div>
+
+    <div>Jede kleinste Bewegung meines Geistes ist von Bedeutung.</div>
+
+    <div>Mit Gedankenkraft gehen.</div>
+
+    <div>Die bildhafte Vorstellung vom eigenen Tun pflegen.</div>
+
+    <div>Faulheit ist die Sünde.</div>
+
+    <div>bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte…</div>
+
+    <div></div>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
