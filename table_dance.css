@@ -1,0 +1,38 @@
+
+
+
+#table_control {
+    float: right;
+    /* width: 18%; */
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* table.gametable thead {
+    display: block;
+}
+
+table.gametable tfoot {
+    display: block;
+} */
+
+/* table.gametable tbody {
+    display: block;
+    min-height: 60px;
+    max-height: 100px;
+    overflow: auto;
+} */
+
+table.gametable {
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin: 22px;
+    background-color: white;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid black;
+}

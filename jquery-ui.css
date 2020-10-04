@@ -1,0 +1,165 @@
+
+body>* {
+
+}
+
+.break {
+    clear:both;
+}
+
+hr {
+    border-color: black;
+}
+
+h3 {
+    padding-left: 5px;
+}
+
+.ui-menu {
+    width: 150px;
+    margin: 30px;
+}
+
+ul#menu {
+    margin: 30px;
+}
+
+.optical_object {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+
+button .fa-angle-up, button .fa-angle-down {
+    font-size: 24px;
+}
+
+button.show {
+    display: inline;
+}
+button.no_show {
+    display: none;
+}
+#switch_time_object_display {
+    display: inline-block;
+}
+
+#time_object {
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(11,11,111, 0.6);
+    width: 50%;
+    top: 20px;
+    right: 20px;
+}
+
+.short_container a {
+    white-space: nowrap;
+    padding: 6px;
+    line-height: 150%;
+    display: block;
+    background-color: PowderBlue;
+    margin: 0;
+}
+
+.short_container a:nth-child(odd) {
+    background-color: LightSkyBlue;
+}
+
+.a_hit {
+    font-weight: 900;
+}
+
+.c_of_short_containers {
+    /* float: left; */
+    box-shadow: 0px 0px 5px 5px darkblue;
+    overflow: hidden;
+    width: 50%;
+    margin: 22px;
+}
+
+.dimensions {
+    display: inline;
+    background-color: red;
+}
+
+select#control_width {
+    width: 90%;
+}
+
+.chart-container {
+    box-shadow: 0px 0px 5px 5px #000;
+    margin: 10px 50px 0px 10px;
+    width: 30%;
+    background-color: inherit;
+    float:right;
+    /* height:20vh; width:30vw */
+    border: 1px solid black;
+}
+
+.short_container {
+    /* height: 400px; */
+    background-color: LightSkyBlue;
+    width: 100%;
+    /* overflow-x: auto;
+    overflow-y: auto; */
+    box-shadow: 0px 0px 3px 1px #000;
+    margin: 10px;
+    /* float: left; */
+    border: 1px solid black;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.controlbox {
+    position:fixed;
+    width:400px;
+    height:300px;
+    right:10px;
+    top:100px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+
+    background: rgba(255, 0, 0, 0.8);
+
+    border: 2px solid blue;
+    border-radius: 10px;
+    /* margin: 50px 100px 100px 100px; */
+    padding: 5px;
+}
+
+form.form_of_questions_and_statements {
+
+    float: right;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 10px;
+    width: 70%;
+    padding: 5px;
+    background-color: LightSkyBlue ;
+    box-shadow: 0px 0px 5px 5px #000;
+}
+
+.question {
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 50px 100px 100px 100px;
+    width: 70%;
+    padding: 5px;
+}
+
+.question select, .question option {
+    text-align: right;
+}
+
+.question input[type=text] {
+
+    text-align: right;
+    width:100px;
+}

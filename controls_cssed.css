@@ -1,0 +1,43 @@
+
+.chart-container {
+    box-shadow: 0px 0px 5px 5px #000;
+    margin: 10px 50px 10px 10px;
+    width: 30%;
+    background-color: inherit;
+    float:right;
+    /* height:20vh; width:30vw */
+}
+
+.position_relative {
+    position: relative;
+}
+
+form.form_of_questions_and_statements {
+
+    float: right;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: -10px 100px 100px 100px;
+    width: 70%;
+    padding: 5px;
+    background-color: LightSkyBlue ;
+    box-shadow: 0px 0px 5px 5px #000;
+}
+
+.question {
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 50px 100px 100px 100px;
+    width: 70%;
+    padding: 5px;
+}
+
+.question select, .question option {
+    text-align: right;
+}
+
+.question input[type=text] {
+
+    text-align: right;
+    width:100px;
+}
