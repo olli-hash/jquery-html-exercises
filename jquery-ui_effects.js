@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $('#jqTabs').tabs({
         create : function () {
-            alert(" tabs made!")
+            // alert(" tabs made!")
         }
     })
 
@@ -16,13 +16,13 @@ $(document).ready(function(){
 
     $( "#menu" ).menu({
         create : function () {
-            alert("menu made!")
+            // alert("menu made!")
         }
     })
 
     $( "#accordion" ).accordion({
         create : function () {
-            alert("accordion made!")
+            // alert("accordion made!")
         }
     })
 

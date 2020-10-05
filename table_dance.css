@@ -2,11 +2,15 @@
 
 
 #table_control {
-    float: right;
+    /* float: right; */
     /* width: 18%; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
     border: 1px solid black;
     padding: 20px;
     margin-right: 20px;
+    background-color: rgba(11, 0, 111, 0.5);
 }
 
 /* table.gametable thead {
@@ -25,7 +29,7 @@ table.gametable tfoot {
 } */
 
 table.gametable {
-    width: 80%;
+    width: 60%;
     border-collapse: collapse;
     border: 3px solid black;
     margin: 22px;
@@ -35,4 +39,13 @@ table.gametable {
 td, th {
     padding: 5px;
     border: 1px solid black;
+}
+
+td:hover, th:hover {
+
+    background-color: #eee;
+}
+
+.selected {
+    background-color: red;
 }

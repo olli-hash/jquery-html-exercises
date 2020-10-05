@@ -101,11 +101,11 @@ select#control_width {
 }
 
 .short_container {
-    /* height: 400px; */
+    height: 400px;
     background-color: LightSkyBlue;
     width: 100%;
-    /* overflow-x: auto;
-    overflow-y: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
     box-shadow: 0px 0px 3px 1px #000;
     margin: 10px;
     /* float: left; */

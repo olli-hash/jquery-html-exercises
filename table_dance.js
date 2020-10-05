@@ -11,9 +11,15 @@ $( document ).ready(function()  {
 
     t1.addrow_ontop([1, 2, 3, 4], "")
     t1.addrow_ontop([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "")
-    t1.equal_columns()
+
+    var n_columns = t1.equal_columns()
 
     t1.assignColumnIds("col", 100)
+
+
+    $('th, td').on("click", function() {
+        $(this).toggleClass("selected")
+    })
 
 
 
@@ -53,6 +59,7 @@ TABLE_MODIFIER.prototype.equal_columns = function () {
             $(e).append(str)
         }
     })
+    return highest
 }
 
 TABLE_MODIFIER.prototype.addrow_ontop = function (content, attributes) {

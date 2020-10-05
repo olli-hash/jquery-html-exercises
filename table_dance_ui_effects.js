@@ -1,27 +1,32 @@
 
 $(document).ready(function(){
 
-    $('tbody_up').on("click", function() {
-        
+    var x = $('.move_bottom').detach()
+
+    x.appendTo('body')
+
+
+
+    $('#tbody_up').on("click", function() {
+
     })
 
-    $('tbody_down').on("click", function() {
+    $('#tbody_down').on("click", function() {
 
     })
 
-})
+    $('#movehere1').on("click", function() {
 
+        var x = $('#gametable').detach()
 
-$( document ).ready(function()  {
+        $(this).parent().append(x)
 
-    $('.position_relative').mouseenter(function(){
-        $(this).css("z-index", "100")
+        $(this).parent().parent().parent().parent().css("width", "100%")
+
+        $(this).remove()
     })
 
-    $('.position_relative').mouseleave(function(){
-        $(this).css("z-index", "10")
-    })
 
-    // console.log(myChart)
+
 
 })
