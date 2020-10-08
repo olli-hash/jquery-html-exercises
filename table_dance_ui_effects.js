@@ -1,9 +1,10 @@
 
 $(document).ready(function(){
 
-    var x = $('.move_bottom').detach()
+    // var x = $('.move_bottom').detach()
+    // x.appendTo('body')
 
-    x.appendTo('body')
+    $('.move_bottom').detach().appendTo('body')
 
 
 

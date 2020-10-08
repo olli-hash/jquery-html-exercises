@@ -1,0 +1,157 @@
+
+
+h1 {
+    border: 1px solid black;
+    margin-left: 200px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+table {
+
+    width: 90%;
+}
+
+td {
+    background-color: #f0c88c ;
+}
+
+.mode1 {
+    display: inline-block;
+}
+
+.overflow1 {
+    overflow: auto;
+}
+
+.container1 {
+    overflow: auto;
+}
+
+.border4 {
+    border: 4px solid black;
+}
+
+.border3 {
+    border: 3px solid black;
+}
+
+.border2 {
+    border: 2px solid black;
+}
+
+.border1 {
+    border: 1px solid black;
+}
+
+.margin3 {
+    margin: 30px;
+}
+
+.margin2 {
+    margin: 20px;
+}
+
+.margin1 {
+    margin: 10px;
+}
+
+.height10 {
+    height: 1000px;
+}
+
+.height9 {
+    height: 900px;
+}
+
+.height8 {
+    height: 800px;
+}
+
+.height7 {
+    height: 700px;
+}
+
+.height6 {
+    height: 600px;
+}
+
+.height5 {
+    height: 500px;
+}
+
+.height4 {
+    height: 400px;
+}
+
+.height3 {
+    height: 300px;
+}
+
+.height2 {
+    height: 200px;
+}
+
+.height1 {
+    height: 100px;
+}
+
+.width30pc {
+    width: 30%;
+}
+
+.c1 {
+    background-color: #f0e68c ;
+}
+
+.myflexer > .c1 {
+    margin: 5px;
+}
+
+.myflexer {
+    display: flex;
+    width: 100%;
+    border: 4px solid #0c7b53 ;
+
+}
+
+.flex1 {
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.flex2 {
+    padding: 15px;
+    flex-grow: 2;
+}
+
+.flex3 {
+    padding: 55px;
+    flex-grow: 1;
+}
+
+.littlebox1 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.littlebox2 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+.box1 {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+}
+
+.longbox1 {
+    height: 50px;
+    width: 200px;
+    background-color: springgreen;
+}

@@ -1,4 +1,6 @@
-
+body {
+    background-color: #ccc;
+}
 
 
 #table_control {
@@ -33,19 +35,24 @@ table.gametable {
     border-collapse: collapse;
     border: 3px solid black;
     margin: 22px;
-    background-color: white;
+    background-color: green;
 }
 
 td, th {
     padding: 5px;
     border: 1px solid black;
+    background-color: #eee;
 }
 
 td:hover, th:hover {
+    opacity: 0.5;
 
-    background-color: #eee;
 }
 
 .selected {
     background-color: red;
+}
+
+.whiteBackground {
+    background-color: white;
 }
