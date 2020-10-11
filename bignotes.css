@@ -15,6 +15,7 @@ li {
 
 .F {
     /* background-color:  rgba(240, 230, 140, 0.3) ; */
+    overflow: hidden;
 }
 
 .selected {

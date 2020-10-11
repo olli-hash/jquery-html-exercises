@@ -14,16 +14,25 @@ $(document).ready(function(){
     })
 
     $('.bignote').on("wheel", function(event){
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            // scroll up
-            alert('up')
+        if (event.originalEvent.deltaY < 0) {
+            l('up')
+            var xx = $(this).find('.field_bottom ul').children('li').last().clone(true)
+
+            var xx = $(this).find('.field_right ul').shiftListUp(xx)
+            var xx = $(this).find('.field_top ul').shiftListUp(xx)
+            var xx = $(this).find('.field_left ul').shiftListDown(xx)
+            var xx = $(this).find('.field_bottom ul').shiftListDown(xx)
+
         }
         else {
-            // scroll down
-            alert('down')
-            l(event.deltaX)
-            l(event.deltaY)
-            l(event)
+            l('down')
+            var xx = $(this).find('.field_top ul').children('li').last().clone(true)
+
+            var xx = $(this).find('.field_right ul').shiftListDown(xx)
+            var xx = $(this).find('.field_bottom ul').shiftListUp(xx)
+            var xx = $(this).find('.field_left ul').shiftListUp(xx)
+            var xx = $(this).find('.field_top ul').shiftListDown(xx)
+
         }
     })
 
