@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    // make listener here
+    // ?: make button here and attach to mainPanel
+
+
+
     $('li').on("click", function(event){
 
         var x = parseInt($(this).css("font-size"))
@@ -36,6 +41,47 @@ $(document).ready(function(){
         }
     })
 
+    $('.highlighter').on("click", function(event){
+        var bignote_root_node = $(this).parent().parent()
+
+        // l("bignote_root_node.length: " + bignote_root_node.length)
+        // l(bignote_root_node.find(".field_big .highlighter").length)
+
+        var obj = new NOTE ( bignote_root_node.find(".field_big .highlighter").html()  ,".field_big")
+
+        getnode(obj.a0)
+        getnode(obj.a1)
+        getnode(obj.a2)
+        getnode(obj.a3)
+
+        var tmp = $('<div class="w1">' +  JSON_and_HTMLEscaping(obj)    + '</div>')
+        bignote_root_node.append(tmp)
+        // l(tmp)
+        localStorage.setItem("first", JSON.stringify(obj))
+
+
+
+
+        function JSON_and_HTMLEscaping(o) {
+            var z =  Handlebars.compile("{{myText}}")
+            var zz = z({myText: JSON.stringify(o, null, 10)})
+            return zz
+        }
+
+        function getnode (to) {
+            bignote_root_node.find(to.link + " ul li").each(function(i,e){
+                to.list.push($(e).html())
+            })
+        }
+
+
+    })
+
+    $('#load_data').on("click", function(e){
+        var y = localStorage.getItem("first")
+        l(y)
+    })
+
 })
 
 function doc2objects() {
@@ -44,10 +90,10 @@ function doc2objects() {
 
 
 function NOTE (text, link_mainfield) {
-    var x = link_mainfield ? link_mainfield : "field_big" ;
+    var x = link_mainfield ? link_mainfield : ".field_big" ;
     this.main = { link : x , list : [text]}
-    this.a0 = { link : "field_right" , list : []}
-    this.a1 = { link : "field_bottom" , list : []}
-    this.a2 = { link : "field_left" , list : []}
-    this.a3 = { link : "field_top" , list : []}
+    this.a0 = { link : ".field_right" , list : []}
+    this.a1 = { link : ".field_bottom" , list : []}
+    this.a2 = { link : ".field_left" , list : []}
+    this.a3 = { link : ".field_top" , list : []}
 }
