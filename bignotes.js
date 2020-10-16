@@ -3,6 +3,31 @@ $(document).ready(function(){
     // make listener here
     // ?: make button here and attach to mainPanel
 
+    var selected_last = {}
+
+
+    // make buttons!!
+
+    //
+
+
+    // var b1_load = $('<button id="b1_load">load</button>')
+    // var b2_save = $('<button id="b2_save">save</button>')
+    // var b3_ = $('<button id="b3_">...</button>')
+
+    var b1_load = '<button id="b1_load">load</button>'
+    var b2_save = '<button id="b2_save">save</button>'
+    var b3_ = '<button id="b3_">...</button>'
+
+    // var chain = b1_load.after(b2_save)
+    var chain = $( "<div class='highbuttons'>" + b1_load + b2_save + b3_ + "</div>" )
+
+    // var wrap = chain.wrap( "<div class='highbuttons'></div>" )
+
+    // $('#0001').find('.highlighter').append(wrap)
+    $('#0001').find('.highlighter').append(chain)
+
+
 
 
     $('li').on("click", function(event){
@@ -14,9 +39,17 @@ $(document).ready(function(){
             x = Math.round( x * 0.84)
         } else {
             $(this).toggleClass("selected")
+            selected_last = $(this)
         }
         $(this).css("font-size", x + "px")
     })
+
+
+
+    $('li').append(  "<button class='b3_'>...</button>"           )
+
+
+
 
     $('.bignote').on("wheel", function(event){
         if (event.originalEvent.deltaY < 0) {
@@ -54,10 +87,14 @@ $(document).ready(function(){
         getnode(obj.a2)
         getnode(obj.a3)
 
-        var tmp = $('<div class="w1">' +  JSON_and_HTMLEscaping(obj)    + '</div>')
-        bignote_root_node.append(tmp)
-        // l(tmp)
-        localStorage.setItem("first", JSON.stringify(obj))
+        // localStorage.setItem("first", JSON.stringify(obj))
+
+
+
+        // var tmp = $('<div class="w1">' +  JSON_and_HTMLEscaping(obj)    + '</div>')
+        // bignote_root_node.append(tmp)
+
+
 
 
 

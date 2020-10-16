@@ -1,6 +1,4 @@
 
-
-
 @import "wholescreen.css";
 
 body {
@@ -11,6 +9,10 @@ li {
     margin: 5px;
     border: 2px solid transparent;
     border-radius: 3px;
+}
+
+li button {
+    font-size: 5px;
 }
 
 .F {
@@ -26,7 +28,20 @@ li {
 }
 
 .field_top:hover, .field_right:hover, .field_left:hover, .field_bottom:hover, .highlighter:hover {
-    box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+.highlighter:hover {
+    background-color:  rgb(243, 20, 20);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+}
+
+.highbuttons {
+    font-size: 10px;
 }
 
 .presentation_screen {
@@ -74,6 +89,11 @@ li {
     text-align: center;
     padding: 200px;
     /* width: 600px; */
+    /*
+    Background?
+    z-index?
+    Positionierung?
+     */
 }
 
 .field_big_smaller {
