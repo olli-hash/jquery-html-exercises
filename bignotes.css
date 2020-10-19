@@ -33,7 +33,9 @@ li button {
 }
 
 .highlighter:hover {
-    background-color:  rgb(243, 20, 20);
+    /* background-color:  rgb(243, 20, 20); */
+    /* background-color: rgb(204, 164, 33); */
+    background-color: hsl(46, 42%, 46%);
     position: relative;
     top: 0px;
     left: 0px;
