@@ -65,6 +65,7 @@ $(document).ready(function(){
 
     $('.bignote').on("wheel", function(event){
         if (event.originalEvent.deltaY < 0) {
+            // up
             var xx = $(this).find('.field_bottom ul').children('li').last().clone(true)
 
             var xx = $(this).find('.field_right ul').shiftListUp(xx)
@@ -73,6 +74,7 @@ $(document).ready(function(){
             var xx = $(this).find('.field_bottom ul').shiftListDown(xx)
         }
         else {
+            // down
             var xx = $(this).find('.field_top ul').children('li').last().clone(true)
 
             var xx = $(this).find('.field_right ul').shiftListDown(xx)
@@ -80,6 +82,12 @@ $(document).ready(function(){
             var xx = $(this).find('.field_left ul').shiftListUp(xx)
             var xx = $(this).find('.field_top ul').shiftListDown(xx)
         }
+    })
+
+    $('.highlighter').on("click", function(event){
+
+        $(this).parent().toggleClass("make_small")
+
     })
 
 

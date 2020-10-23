@@ -5,6 +5,13 @@ body {
     overflow: auto;
 }
 
+.presentation_screen {
+    width: 10000px;
+    height: 750px;
+    border: 1px solid black;
+}
+
+
 li {
     margin: 5px;
     border: 2px solid transparent;
@@ -46,10 +53,6 @@ li button {
     font-size: 10px;
 }
 
-.presentation_screen {
-    width: 10000px;
-    border: 1px solid black;
-}
 
 .highlighter {
     margin: 0px;
@@ -59,6 +62,7 @@ li button {
     /* opacity: 0.9; */
 }
 
+/* window ? */
 .w1 {
     position: absolute;
     width: 100%;
@@ -80,16 +84,30 @@ li button {
 .bignote {
     position: relative;
     display: inline-block;
-    width: 10%;
-    overflow: auto;
+    /* width: 10%; */
+    overflow: hidden;
     border: 4px solid #834334;
     margin: 3px 20px;
 }
 
+.make_small {
+    font-size: 50px;
+    padding: 50px;
+}
+
+.field_big.make_small {
+    /* transition: padding 2s; */
+    transition: font-size 3s;
+    font-size: 50px;
+    padding: 50px;
+
+}
+
 .field_big {
+    transition: 2s;
     font-size: 200px;
     text-align: center;
-    padding: 200px;
+    padding: 180px 300px;
     /* width: 600px; */
     /*
     Background?
@@ -112,29 +130,31 @@ li button {
     top: 0px;
     left: 10%;
     width: 80%;
+    height: 15%;
 }
 
     .field_top ul {
         columns: 2 200px;
     }
 
+.field_bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+}
+
 .field_left {
     position: absolute;
     top: 10%;
-    left: 20px;
+    left: 0px;
     height: 80%;
 }
 
 .field_right {
     position: absolute;
     top: 10%;
-    right: 20px;
+    right: 0px;
     height: 80%;
-}
-
-.field_bottom {
-    position: absolute;
-    bottom: 0px;
-    left: 10%;
-    width: 80%;
 }

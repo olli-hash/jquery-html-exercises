@@ -18,6 +18,48 @@ td {
     background-color: #f0c88c ;
 }
 
+.trans1 {
+    transition: width, height;
+    transition-duration: 3s;
+}
+
+.trans2 {
+    transition: font-size, border;
+    transition-duration: 3s;
+}
+
+
+
+
+.example_1 {
+    width: 60%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.innermost {
+    padding: 40px;
+    background-color: hsl(17, 92%, 75%);
+}
+
+.wrap1 {
+    padding: 60px;
+    background-color: #dcb509;
+}
+
+.wrap1 > .wrap1 {
+    padding: 60px;
+    background-color: #cadc09;
+}
+
+.wrap1 > .wrap1 > .wrap1 {
+    padding: 60px;
+    background-color: #56dc09;
+}
+
+
+
+
 .mode1 {
     display: inline-block;
 }
