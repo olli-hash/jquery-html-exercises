@@ -1,0 +1,14 @@
+
+
+.cssinputs {
+    font-size: 33px;
+    line-height: 2.7;
+}
+
+.cssinputs input {
+    display: inline-block;
+    line-height: 2.0;
+    font-size: 33px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
