@@ -7,8 +7,10 @@ body {
 
 .presentation_screen {
     width: 10000px;
-    height: 750px;
-    border: 1px solid black;
+    height: 350px;
+    border: 5px solid #a9bd3f;
+    padding: 10%;
+    overflow: auto;
 }
 
 
@@ -97,14 +99,16 @@ li button {
 
 .field_big.make_small {
     /* transition: padding 2s; */
-    transition: font-size 3s;
+    transition: font-size padding;
+    transition-duration: 0.2s;
     font-size: 50px;
-    padding: 50px;
+    /* padding: 50px; */
+    padding: 5%;
 
 }
 
 .field_big {
-    transition: 2s;
+    transition: 0.2s;
     font-size: 200px;
     text-align: center;
     padding: 180px 300px;

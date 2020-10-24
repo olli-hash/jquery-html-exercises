@@ -91,6 +91,10 @@ $(document).ready(function(){
     })
 
 
+    $('.highlighter').trigger("click")
+
+
+
 })
 
 function NOTE (text, link_mainfield) {
