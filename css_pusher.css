@@ -1,47 +1,60 @@
 
 .csspanel {
+    width: 90%;
+    margin: 15px auto;
+    padding: 30px;
+    font-size: 33px;
+    line-height: 2.7;
+    background-color: #d41a41;
+    border-radius: 5px;
+}
+
+.csspanel div {
+    margin: 22px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.csspanel input {
+    width: 90%;
+    display: inline-block;
+    line-height: 2.0;
+    font-size: 22px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.flexcon1 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     /* justify-content: space-around; */
     /* justify-content: space-between; */
-    margin: 55px 100px;
-    padding: 30px;
-    font-size: 33px;
-    line-height: 2.7;
-    background-color: #d41a41;
+
 }
 
-.csspanel > div {
-    padding: 5px;
-    border-radius: 15px;
 
+.select_project {
+    flex: 0 1 500px;
+    box-shadow: 0px 0px 5px 5px white;
 }
 
 .cssruledestination {
-    flex-grow: 7;
+    flex: 0 1 500px;
     background-color: rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* justify-content: space-around; */
+    /* justify-content: center; */
+    justify-content: space-around;
     /* justify-content: space-between; */
     box-shadow: 0px 0px 5px 5px white;
 }
 
 .cssrule {
-    flex-grow: 1;
+    flex: 0 1 500px;
     background-color: rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 5px 5px white;
 
-}
-
-
-.csspanel input {
-    display: inline-block;
-    line-height: 2.0;
-    font-size: 22px;
-    border: 1px solid black;
-    border-radius: 8px;
 }

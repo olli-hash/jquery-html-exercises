@@ -13,6 +13,10 @@ $(document).ready(function(){
     // $('li').append(  "<button class='li_buttons'>...</button>"           )
 
     $('.b2_save').on("click", function(event){
+
+
+        // prevent bubbling!                    2do
+
         var bignote_root_node = $(this).parent().parent().parent().parent()
         // l($(this).prop("class"))
         // l($(this).parent().prop("class"))
@@ -25,7 +29,14 @@ $(document).ready(function(){
         getnode(obj.a2)
         getnode(obj.a3)
 
-        localStorage.setItem(store_id, JSON.stringify(obj))
+        var ooo = new Date()
+        var nowt = ooo.getHours() + "_" + ooo.getMinutes() + "_" + ooo.getSeconds()
+        var d = ooo.toDateString() + "    " + nowt
+        // var d = now.toLocaleString()
+
+        localStorage.setItem(store_id + "_json_" + d , JSON.stringify(obj))
+        l('key used:')
+        l(store_id + "_json_" + d)
 
         // var tmp = $('<div class="w1">' +  JSON_and_HTMLEscaping(obj)    + '</div>')
         // bignote_root_node.append(tmp)
@@ -48,6 +59,8 @@ $(document).ready(function(){
     $('.b1_load').on("click", function(e){
         var y = localStorage.getItem(store_id)
         l(y)
+
+        l(Object.keys(localStorage))
     })
 
     $('li').on("click", function(event){
@@ -86,7 +99,7 @@ $(document).ready(function(){
 
     $('.highlighter').on("click", function(event){
 
-        $(this).parent().toggleClass("make_small")
+        //$(this).parent().toggleClass("make_small")
 
     })
 
