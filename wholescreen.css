@@ -59,6 +59,53 @@ td {
 
 
 
+.mode2 {
+    position:absolute;
+    box-shadow: 0px 0px 10px 1px black;
+    /* background-color: rgba(245, 235, 246, 0.39); */
+    right: 0px;
+    top: 5%;
+    height: 90%;
+    width: 5%;
+}
+
+.mode2:hover {
+    box-shadow: 0px 0px 10px 10px black;
+    background-color: rgba(245, 235, 246, 0.39);
+
+}
+
+.mode2 + .mode2 {
+    /* these will be "inherited" by the next selectors... */
+    top: auto;
+    right: auto;
+
+
+    bottom: 0px;
+    left: 5%;
+    width: 90%;
+    height: 5%;
+}
+
+.mode2 + .mode2 + .mode2 {
+    bottom: auto;
+    left: auto;
+
+    left: 0px;
+    top: 5%;
+    height: 90%;
+    width: 5%;
+}
+
+.mode2 + .mode2 + .mode2 + .mode2 {
+
+    top: 0px;
+    left: 5%;
+    width: 90%;
+    height: 5%;
+
+}
+
 
 .mode1 {
     display: inline-block;

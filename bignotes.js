@@ -1,5 +1,31 @@
 $(document).ready(function(){
 
+
+
+
+
+
+    var wraper1 = "<div class=''></div>"
+
+
+
+    var some_mode2 = $('.mode2').detach()
+
+    $('body').append(some_mode2)
+
+
+    $('.mode2').hover(handlerIN, handlerOUT)
+
+    function handlerIN() {
+
+    }
+
+    function handlerOUT() {
+        
+    }
+
+
+
     var selected_last = {}
 
     var store_id = "bignotes_"
@@ -77,6 +103,7 @@ $(document).ready(function(){
     })
 
     $('.bignote').on("wheel", function(event){
+        event.preventDefault()
         if (event.originalEvent.deltaY < 0) {
             // up
             var xx = $(this).find('.field_bottom ul').children('li').last().clone(true)

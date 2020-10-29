@@ -11,6 +11,8 @@ body {
     border: 5px solid #a9bd3f;
     padding: 10%;
     overflow: auto;
+
+    position: relative;
 }
 
 
