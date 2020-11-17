@@ -60,8 +60,8 @@ td {
 
 
 .mode2 {
-    position:absolute;
-    box-shadow: 0px 0px 10px 1px black;
+    position:fixed;
+    /* box-shadow: 0px 0px 10px 1px black; */
     /* background-color: rgba(245, 235, 246, 0.39); */
     right: 0px;
     top: 5%;

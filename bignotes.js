@@ -2,18 +2,23 @@ $(document).ready(function(){
 
 
 
+    // save one element: key ?
+
+    // save all elements: key(s) ?
+
+    // save histories of elements: keys ?
 
 
 
-    var wraper1 = "<div class=''></div>"
+    // var wraper1 = "<div class=''></div>"
 
 
 
-    var some_mode2 = $('.mode2').detach()
+    // var some_mode2 = $('.mode2').detach()
+    // $('body').append(some_mode2)
 
-    $('body').append(some_mode2)
 
-
+    // make scrolling by mouse hovering .mode2 div-elements:
     $('.mode2').hover(handlerIN, handlerOUT)
 
     function handlerIN() {
@@ -21,7 +26,7 @@ $(document).ready(function(){
     }
 
     function handlerOUT() {
-        
+
     }
 
 
@@ -30,6 +35,7 @@ $(document).ready(function(){
 
     var store_id = "bignotes_"
 
+    // duplicate Button!
     var b1_load = '<button class="b1_load">load</button>'
     var b2_save = '<button class="b2_save">save</button>'
     var b3_ = '<button class="b3_">...</button>'
